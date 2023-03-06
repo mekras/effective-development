@@ -1,0 +1,17 @@
+##
+## Настройки для запуска сайта на локальной машине.
+##
+
+version: '3.2'
+
+services:
+
+  ## Сервер для разработки.
+  dev-server:
+    image: mekras/sphinx-doc:latest
+    ports:
+      - '8000:8000'
+    volumes:
+      - './src/pages:/opt/docs:ro'
+    working_dir: '/opt/docs'
+    command: sphinx-autobuild --host 0.0.0.0 /opt/docs /var/www/html/pages

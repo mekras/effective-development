@@ -1,0 +1,30 @@
+##
+## Настройки для запуска сайта на боевом хостинге.
+##
+## Для работы требуется nginx-proxy: https://github.com/jwilder/nginx-proxy/
+##
+
+version: '3'
+
+services:
+
+    ## Веб-сервер и сам сайт.
+    web:
+        restart: always
+        image: nginx:latest
+        expose:
+            # Открываем порт для nginx-proxy.
+            - 80
+        environment:
+            VIRTUAL_HOST: xn--d1alp.xn--80asehdb
+        volumes:
+            - './htdocs:/usr/share/nginx/html:ro'
+        networks:
+            - nginx-proxy
+
+# Дополнительные виртуальные сети.
+networks:
+    # Сеть, позволяющая маршрутизацию с помощью nginx-proxy.
+    nginx-proxy:
+        external:
+            name: nginx-proxy
