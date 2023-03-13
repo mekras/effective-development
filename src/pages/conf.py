@@ -21,7 +21,7 @@ import datetime
 # -- Project information -----------------------------------------------------
 
 project = 'Эффективная разработка'
-copyright = '2023, CC BY-NC-SA, Михаил Красильников'
+copyright = '2023, Михаил Красильников'
 author = 'Михаил Красильников'
 
 # The short X.Y version
