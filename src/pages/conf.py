@@ -25,9 +25,9 @@ copyright = '2023, Михаил Красильников'
 author = 'Михаил Красильников'
 
 # The short X.Y version
-version = '0.2'
+version = '0.3'
 # The full version, including alpha/beta/rc tags
-release = version + '.1'
+release = version + '.0'
 
 
 # -- General configuration ---------------------------------------------------
