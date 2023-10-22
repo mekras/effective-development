@@ -4,8 +4,6 @@
 ## Для работы требуется nginx-proxy: https://github.com/jwilder/nginx-proxy/
 ##
 
-version: '3'
-
 services:
 
     ## Веб-сервер и сам сайт.
