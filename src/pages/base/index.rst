@@ -5,6 +5,6 @@
 .. toctree::
    :maxdepth: 1
 
-   goals
+   goals/index
    systematic_approach
-   effectiveness
+   effectiveness/index
