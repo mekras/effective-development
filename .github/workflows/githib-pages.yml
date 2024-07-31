@@ -18,3 +18,24 @@ jobs:
 
       - name: Сборка HTML
         run: docker run --rm -v $(pwd)/src:/docs -v $(pwd)/htdocs:/opt/build mekras/sphinx-doc:latest make html
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: htdocs/
+
+  deploy:
+    needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
