@@ -95,8 +95,7 @@ html_theme = 'sphinx_rtd_theme'
 #
 html_theme_options = {
     'style_external_links': True,
-    'titles_only': True,
-    'github_url': 'https://github.com/mekras/effective-development'
+    'titles_only': True
 }
 
 # The "title" for HTML documentation generated with Sphinx’s own templates. This is appended to the
