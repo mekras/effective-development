@@ -21,7 +21,7 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: htdocs/
+          path: htdocs/html
 
   deploy:
     needs: build
