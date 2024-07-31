@@ -20,7 +20,7 @@ import datetime
 
 # -- Project information -----------------------------------------------------
 
-project = 'Эффективная разработка'
+project = 'Эффективная разработка ПО'
 copyright = '2023, Михаил Красильников'
 author = 'Михаил Красильников'
 
@@ -96,14 +96,14 @@ html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
     'style_external_links': True,
     'titles_only': True,
-#    'github_url': 'https://github.com/mekras/hwd/'
+    'github_url': 'https://github.com/mekras/effective-development'
 }
 
 # The "title" for HTML documentation generated with Sphinx’s own templates. This is appended to the
 # <title> tag of individual pages, and used in the navigation bar as the "topmost" element. It
 # defaults to '<project> v<revision> documentation'.
 #
-html_title = 'Эффективная разработка'
+html_title = 'Эффективная разработка ПО'
 
 # A shorter "title" for the HTML docs. This is used in for links in the header and in the HTML Help
 # docs. If not given, it defaults to the value of html_title.
@@ -161,7 +161,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'effective-development.tex', 'Эффективная разработка',
+    (master_doc, 'effective-development.tex', 'Эффективная разработка ПО',
      'Михаил Красильников', 'manual'),
 ]
 
@@ -171,7 +171,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'effective-development', 'Эффективная разработка',
+    (master_doc, 'effective-development', 'Эффективная разработка ПО',
      [author], 1)
 ]
 
@@ -182,8 +182,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'effective-development', 'Эффективная разработка',
-     author, 'effective-development', 'Эффективная разработка.',
+    (master_doc, 'effective-development', 'Эффективная разработка ПО',
+     author, 'effective-development', 'Эффективная разработка ПО.',
      'Miscellaneous'),
 ]
 
