@@ -9,7 +9,6 @@
 .. toctree::
    :maxdepth: 2
 
-   intro
    goals
    base/index
    theory/index
